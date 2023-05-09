@@ -104,7 +104,7 @@
 <!--            mybatis plus 集成spring boot 启动器-->
             <dependency>
                 <groupId>mybatis-plus-boot-starter</groupId>
-                <artifactId>mybatis-plus-boot-star|ter</artifactId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
 <!--            mybatis plus 代码生成器-->

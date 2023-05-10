@@ -92,7 +92,7 @@
 <!--            druid连接池管理-->
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid.spring-boot-starter</artifactId>
+                <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring-boot-starter.version}</version>
             </dependency>
 <!--            mysql数据驱动包管理-->
@@ -103,14 +103,14 @@
             </dependency>
 <!--            mybatis plus 集成spring boot 启动器-->
             <dependency>
-                <groupId>mybatis-plus-boot-starter</groupId>
+                <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
 <!--            mybatis plus 代码生成器-->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-genarator</artifactId>
+                <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
 <!--            工具管理类-->

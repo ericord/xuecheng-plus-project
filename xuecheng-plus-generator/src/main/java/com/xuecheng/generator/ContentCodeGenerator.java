@@ -16,24 +16,26 @@ import java.util.Arrays;
 public class ContentCodeGenerator {
 
 	// TODO 修改服务名以及数据表名
-	private static final String SERVICE_NAME = "content";
+	private static final String SERVICE_NAME = "xc166_content";
 
 	//数据库账号
 	private static final String DATA_SOURCE_USER_NAME  = "root";
 	//数据库密码
-	private static final String DATA_SOURCE_PASSWORD  = "mysql";
+	private static final String DATA_SOURCE_PASSWORD  = "Mysql111!";
 	//生成的表
 	private static final String[] TABLE_NAMES = new String[]{
-//			"mq_message",
-//			"mq_message_history"
-//			 "course_base",
-//			 "course_market",
-//			 "teachplan",
-//			 "teachplan_media",
-//			 "course_teacher",
-//			"course_category"
-			 "course_publish",
-			 "course_publish_pre"
+			"course_audit",
+			"course_base",
+			"course_category",
+			"course_market",
+			"course_publish",
+			"course_publish_pre",
+			"course_teacher",
+			"mq_message",
+			"mq_message_history",
+			"teachplan",
+			"teachplan_media",
+			"teachplan_work",
 
 	};
 
@@ -55,8 +57,8 @@ public class ContentCodeGenerator {
 		gc.setOpen(false);
 		gc.setSwagger2(false);
 		gc.setServiceName("%sService");
-        gc.setBaseResultMap(true);
-        gc.setBaseColumnList(true);
+		gc.setBaseResultMap(true);
+		gc.setBaseColumnList(true);
 
 		if (IS_DTO) {
 			gc.setSwagger2(true);
@@ -67,9 +69,9 @@ public class ContentCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xc148_" + SERVICE_NAME
+		dsc.setUrl("jdbc:mysql://localhost:3306/" + SERVICE_NAME
 				+ "?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8");
-//		dsc.setDriverName("com.mysql.jdbc.Driver");
+//      dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername(DATA_SOURCE_USER_NAME);
 		dsc.setPassword(DATA_SOURCE_PASSWORD);
